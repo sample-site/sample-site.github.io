@@ -1,0 +1,15 @@
+
+
+# Site settings
+
+title: Sample Site Tattoo
+email: your-email@domain.com
+description: http://www.lafamiliatattoo.co.uk/olly-streeter-newquay-cornwall-tattoo-artist/
+baseurl: ""
+
+# Build settings
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+    syntax_highlighter: rouge

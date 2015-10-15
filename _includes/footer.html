@@ -1,0 +1,54 @@
+<footer class="footer container-fluid">
+    <div class="upper row">
+        <div class="container">
+            <div class="col-xs-12 col-sm-5">
+                <h4>
+                    Sample Site Tattoo
+                </h4>
+                <p>
+                    123 Main Street<br/>
+                    Melbourne<br/>
+                    VIC 3000<br/>
+                    Australia<br/>
+                </p>
+                <p>
+                    03 1234 5678
+                </p>
+                <p>
+                    info@redronin.net
+                </p>
+                <p>
+                    Follow us on:<br/>
+                    <img src="/images/facebok-icon.png" />
+                    <img src="/images/instagram.png" />
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-7">
+                <h4>
+                    Check out the rest of the site:
+                </h4>
+                <ul class="footer-menu list-unstyled">
+                    {% for page in site.pages %}
+                        {% if page.title %}
+                            <li class="footer-menu-item">
+                                <a class="active" href="{{ page.url | prepend: site.baseurl }}">
+                                    {{ page.title }}
+                                </a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="lower row">
+        <div class="container">
+            <div class="col-xs-6">
+                <i class="glyphicon glyphicon-copyright-mark"></i> 2015 Sample Site Tattoo.
+            </div>
+            <div class="col-xs-6 text-right">
+                F T
+            </div>
+        </div>
+    </div>
+</footer>
